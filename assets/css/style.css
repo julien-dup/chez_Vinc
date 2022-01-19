@@ -13,7 +13,7 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-image: url("../img/nine_2560x1440.jpg");
+    background-image: linear-gradient(rgba(65, 121, 134, 0.5), rgba(255, 136, 0, 0.5), rgba(243, 10, 10, 0.5)), url("../img/background.jpg");
     display: flex;
     justify-content: center;
     z-index: -2;
@@ -23,18 +23,65 @@ body {
 #navBar {
     width: 100%;
     height: 200px;
-    background-color: blueviolet;
     display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+    height: 100%;
+    background-image: url("../img/logo-removebg-preview.png");
+    background-position: center;
+    background-size: 80%;
+}
+
+.navigation {
+    width: 70%;
+    height: 50px;
+    font-size: 1.7rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: ivory
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: rgb(65, 121, 134);
+    border-radius: 15%;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+li {
+    text-decoration: none;
+}
+
+li:hover {
+    text-decoration: underline;
+    letter-spacing: 2ch;
+    transition: 1000ms;
 }
 
 #navBar2 {
     width: 100%;
     height: 180px;
     background-color: rgb(43, 226, 52);
-    display: flex;
     z-index: 15;
     position: fixed;
     top: 0;
+}
+
+.lineInfo {
+    width: 100%;
+    height: 30%;
+    background-color: rgb(65, 121, 134);
+}
+
+.lineLogoNavBar {
+    width: 100%;
+    height: 70%;
+    background-color: white;
 }
 
 #contain {
@@ -50,8 +97,19 @@ body {
 .title {
     width: 100%;
     height: 150px;
-    background-color: dimgrey;
+    background-color: rgb(65, 121, 134);
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5.5rem;
+    color: ivory;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Praise', cursive;
 }
 
 #contain2 {
@@ -66,7 +124,39 @@ body {
 .boxIntro {
     width: 100%;
     height: 800px;
-    background-color: brown;
+    background-image: linear-gradient(45deg, rgba(65, 121, 134, 0.7), rgba(255, 136, 0, 0.7), rgba(243, 10, 10, 0.7)), url("../img/backgroundIntro.jpg");
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 2%;
+}
+
+.boxImgIntro {
+    width: 97%;
+    height: 60%;
+    background-image: url("../img/imgBoxIntro.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px black;
+}
+
+.textIntro {
+    width: 45%;
+    height: 90%;
+    background-color: rgba(128, 128, 128, 0.521);
+    color: ivory;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.imgIntro {
+    width: 46%;
+    height: 93%;
+    background-color: rgba(128, 128, 128, 0.507);
+    margin-right: 2%;
 }
 
 .boxInfo {

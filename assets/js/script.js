@@ -11,7 +11,7 @@ document.addEventListener("scroll", function() {
 
     if (intElemScrollDown > 100) {
         navBar.style.display = "none"
-        navBar2.style.display = "flex"
+        navBar2.style.display = "block"
 
     } else {
         navBar.style.display = "flex"
